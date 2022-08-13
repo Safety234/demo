@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>
+        My Website</title>
+ <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1,h2{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-shadow:2px 2px 3px red;
+    margin-bottom: 20px;
+    cursor:pointer;
+}
+.about{
+    height:auto;
+    animation-name: rotation;
+    animation-duration:8s;
+    animation-delay:2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+     @keyframes rotation{
+         0%{
+         }
+         25%{
+             transform:rotateY(30deg);
+         }
+         50%{
+             
+         }
+         75%{
+             transform:rotateY(-30deg);
+         }
+         100%{
+             
+         }
+     }
+     .about:hover .contact, .about:hover .personalinfo,.about:hover .crime,.about:hover .life{
+         box-shadow: 5px 10px 7px rgb(215,100,215);
+     }
+body{
+    align-items: center;
+    width:75%;
+    margin-left: 12%;
+    font-family: cursive;
+    justify-content: center;
+}
+.contact,.personalinfo{
+    float:left;
+    width:50%;
+    position: relative;
+    background-color: yellow;
+}
+h2:hover{
+    text-decoration: underline 2px solid  blue;
+}
+ul{
+     margin-left:20px;    
+}
+h1{
+    animation-name: welcome;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+     @keyframes welcome{
+         0%{
+             text-decoration: underline solid 2px violet;
+         }
+         25%{
+             transform: rotate(-10deg);
+             color:red;
+             text-decoration-line:dotted solid 2px violet;;
+         }
+         50%{
+             text-decoration: underline solid 2px violet;
+
+         }
+         75%{
+             transform: rotate(10deg);
+             color: blue;
+             text-decoration-line:dotted solid 2px violet;;
+         }
+         100%{
+             text-decoration: underline solid 2px violet;
+         }
+     }
+     .contact{
+         min-height: 161px;
+     }
+     .firstrow:after{
+         content:"";
+         clear:both;
+         display:table;
+     }
+     .secondrow{
+         clear: both;
+     }
+     .crime,.life{
+         float: left;
+         width:50%;
+         position: relative;
+         background-color: yellow;
+     }
+</style>
+</head>
+<body style="background-color:white">
+    <h1>Welcome!</h1>
+    <div class="about me">
+        <div class="firstrow">
+        <div class="personalinfo">
+    <h2>Personal info</h2>
+        <ul>
+        <li><b>Name : </b> M. Chennakesava Reddy</li>
+        <li><b>Age     : </b> 19 </li>
+        <li><b>Date of Birth : </b> 01 - 01 - 2003</li>
+        </ul>
+    </div>
+    <div class="contact">
+    <h2>My contact</h2>
+        <ul>
+            <li><b>Mobile no - </b>9346616125</li>
+            <li><b>Email id -</b> chennakesavareddy426@gmail.com</li>
+        </ul>
+    </div>
+    </div>
+        <div class="secondrow">
+    <div class="crime partners">
+        <h2>Crime partners</h2>
+        <ul>
+            <li><b>Kaishu</b></li>
+            <li><b>Gouthami</b></li>
+        </ul>
+    </div>
+        <div class="life partner">
+        <h2>Life partner</h2>
+        <ul>
+            <li><b>If you want to know, then read below !</b></li>
+            <li><b>Go and ask one of my crime partners.</b></li>
+        </ul>
+    </div>
+    </div>
+        <div class="feed"
+    </div>
+</body>
+</html>
